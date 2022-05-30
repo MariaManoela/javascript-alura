@@ -9,3 +9,6 @@ console.log(`Meu nome é ${primeiroNome} ${sobrenome}`);
 
 const nomeCompleto = primeiroNome + sobrenome;
 console.log(nomeCompleto);
+
+//let: variável que permite que seu valor seja alterado
+//const: variável de valor imutável
