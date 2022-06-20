@@ -65,11 +65,23 @@ function montaTd(dado, classe) {
 function validaPaciente(paciente) {
     var erros = [];
 
+    if(paciente.nome.length == 0)
+        erros.push("O campo nome deve ser preenchido");
+
     if(!validaPeso(paciente.peso)) 
         erros.push("O peso é inválido");
-        
+    
+    if(paciente.peso.length == 0)
+        erros.push("O campo peso deve ser preenchido");
+
     if(!validaAltura(paciente.altura))
         erros.push("A altura é inválida");
+
+    if(paciente.altura.length == 0)
+        erros.push("O campo altura deve ser preenchido");
+
+    if(paciente.gordura.length == 0)
+        erros.push("O campo gordura deve ser preenchido");
 
     return erros;
 }
