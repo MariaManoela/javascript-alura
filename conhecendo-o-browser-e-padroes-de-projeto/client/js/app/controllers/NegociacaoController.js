@@ -9,6 +9,8 @@ class NegociacaoController  {
 
     adiciona(event) {
         event.preventDefault();
+
+        console.log(typeof(this._inputData.value));
         
         let negociacao = new Negociacao(
             this._inputData.value,
