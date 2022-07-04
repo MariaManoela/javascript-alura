@@ -24,7 +24,6 @@ exibeNoConsole(lista);
 // resolução do exercício
 let listaDeNomes3 = ['Flávio', 'Rogers', 'Júlia'];
 let listaDeNomes4 = ['Vieira', 'Fernanda', 'Gerson'];
-let listaTotal = [...listaDeNomes1, ...listaDeNomes2];
 
 function exibeNoConsole(lista) {
     lista.forEach(item => console.log(item));
